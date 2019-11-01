@@ -9,3 +9,28 @@ Hinglish is a compound word made from *Hindi* and *English*. Hinglish is the cod
 - Effective algorithms for various tasks in Hinglish
 - Data used for training
 - Other Hinglish data assets
+
+
+## Directory Structure
+
+Here's how the data directory is structured. Some data files will not be present in the gituhb repo as they are not final yet.
+
+```
+data
+├── README.md
+├── assets
+│   ├── README.md
+│   ├── eng_vocab
+│   ├── hindi_chars
+│   ├── stop_hindi
+│   └── stop_hinglish
+├── normalization
+│   ├── README.md
+│   ├── train_manual_all.csv
+│   ├── train_released_1.csv
+│   └── train_synthetic.csv
+└── transliteration
+    ├── eng_hin_pairs.txt
+    ├── eng_hin_pairs_uniq.txt
+    └── README.md
+```
