@@ -6,19 +6,20 @@ This readme explains the sources of the spelling error pairs used for the models
 
 # Publicly Available Datasets
 
-1. [EFC Corpus](https://corpus.mml.cam.ac.uk/efcamdat/) [Medium]
+1. [EFC Corpus](https://corpus.mml.cam.ac.uk/efcamdat/) [Medium Size]
 
-    J Geertzen, T Alexopoulou, and A Korhonen. 2012. Automatic Linguistic Annotation of Large Scale L2 Databases: The EF-Cambridge Open Language Database (EFCamDat). In Ryan T. Miller, editor, Selected Proceedings of the 2012 Second Language Research Forum. MA: Cascadilla Proceedings Project.
+    > J Geertzen, T Alexopoulou, and A Korhonen. 2012. Automatic Linguistic Annotation of Large Scale L2 Databases: The EF-Cambridge Open Language Database (EFCamDat). In Ryan T. Miller, editor, Selected Proceedings of the 2012 Second Language Research Forum. MA: Cascadilla Proceedings Project.
 
     Lisa Beinborn, Torsten Zesch, Iryna Gurevych. Predicting the Spelling Difficulty of Words for Language Learners. In:Proceedings of the 11th Workshop on Innovative Use of NLP for Building Educational Applications held in conjunction with NAACL 2016, p. to appear, 2016.
 
-2. birkbeck (https://www.dcs.bbk.ac.uk/~ROGER/corpora.html) [Small]
-3. holbrook (https://www.dcs.bbk.ac.uk/~ROGER/corpora.html) [Small]
-4. aspell (https://www.dcs.bbk.ac.uk/~ROGER/corpora.html) [Small]
-5. wikipedia (https://www.dcs.bbk.ac.uk/~ROGER/corpora.html) [Small]
-6. [Facebook moe spelling dataset](https://github.com/facebookresearch/moe/tree/master/data) [Big]
+2. birkbeck (https://www.dcs.bbk.ac.uk/~ROGER/corpora.html) [Small Size]
+3. holbrook (https://www.dcs.bbk.ac.uk/~ROGER/corpora.html) [Small Size]
+4. aspell (https://www.dcs.bbk.ac.uk/~ROGER/corpora.html) [Small Size]
+5. wikipedia (https://www.dcs.bbk.ac.uk/~ROGER/corpora.html) [Small Size]
+6. [Facebook moe spelling dataset](https://github.com/facebookresearch/moe/tree/master/data) [Big Size]
 
-> Note: Part of the spelling error pairs from data sources, 1 till 5 were combined together and manually sifted through. There were some invalid corrections which did not make any sense so I was trying to remove those. All these manually looked through pairs are in `train_manual_all.csv` file. Later I realised that finishing the whole list is going to take a lot of time, so I forgo the idea and put the rest of the pairs in `train_released_1.csv`.
+
+Note: Part of the spelling error pairs from data sources, 1 till 5 were combined together and manually sifted through. There were some invalid corrections which did not make any sense so I was trying to remove those. All these manually looked through pairs are in `train_manual_all.csv` file. Later I realised that finishing the whole list is going to take a lot of time, so I forgo the idea and put the rest of the pairs in `train_released_1.csv`. Which I think was the right decision as this way it'll also contain noise and the model will learn how to deal with real world misspellings.
 
 
 # Synthetic Data Creation
@@ -36,7 +37,7 @@ This readme explains the sources of the spelling error pairs used for the models
 2. Substitution of one letter by another: "definate" for "definite"
 3. Apostrophe errors
 
-> Note: Synthetic data and the script to create will be released once it's crystallized.
+Note: Synthetic data and the script to create will be released once it's crystallized.
 
 
 ## Publications
@@ -48,10 +49,10 @@ This readme explains the sources of the spelling error pairs used for the models
 - Kusuran, Amir: L2 English spelling error analysis - An investigation ofEnglish spelling errors made by Swedish senior high school students
 
 
-## Training Files Created
+# Training Files Created
 
 - Train 1 (`train_0.csv`): Manual + Released Dataset
 - Train 2 (`train_1.csv`): Manual + Released + Synthetic Dataset
 - Train 3 (`train_2.csv`): Facebook MOE Dataset
 
-> Note: Scripts to make these datasets will be released once they are crystallized.
+Note: Scripts to make these datasets will be released once they are crystallized.
