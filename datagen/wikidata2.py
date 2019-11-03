@@ -56,6 +56,6 @@ def process(dump_file, pair_file):
 
 if __name__ == "__main__":
     dump_file = data_dir / "latest-all.json.bz2"
-    pair_file = data_dir / "eng_hin_pairs.txt"
+    pair_file = data_dir / "en_hi_pairs.txt"
     process(dump_file, pair_file)
     print(f"Written to {pair_file}")
