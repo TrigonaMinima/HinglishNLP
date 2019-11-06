@@ -51,7 +51,7 @@ All the data generation/creation scripts and code are present in the `datagen` d
     python wiki_trans_filter.py
     ```
 
-    Note: At the end you wont get the final dataset. You'll have to process this dataset manually. More detailed process can be found at this blog entry - [Training Data Extraction from Wikidata: English-Hindi Transliteration Pairs]()
+    Note: At the end you wont get the final dataset. You'll have to process this dataset manually. More detailed process can be found at this blog entry - [Wikidata for Transliteration Pairs](https://trigonaminima.github.io/2019/11/transliteration-wikidata/)
 
 
 
@@ -63,4 +63,4 @@ Below are the list of blog posts I wrote in order to explain different parts of 
 2. What started this all: [(Mis)adventures of Building a Chat Bot](https://trigonaminima.github.io/2018/10/chatbot/);
 3. Intro to WX Notation, something which I expect to use in the final model: [Understanding WX notation](https://trigonaminima.github.io/2019/03/wx_notation/);
 4. Intuition of the components of the Seq2Seq models: [Seq2Seq Components](https://trigonaminima.github.io/2019/09/seq2seq-components/).
-5. Training data creation for transliteration from Wikidata: [Training Data Extraction from Wikidata: English-Hindi Transliteration Pairs]()
+5. Training data creation for transliteration from Wikidata: [Wikidata for Transliteration Pairs](https://trigonaminima.github.io/2019/11/transliteration-wikidata/)
