@@ -37,7 +37,8 @@ class Seq2Seq(nn.Module):
 
 class Seq2SeqInfer(Seq2Seq):
     def prep_trg(self, src):
-        trg = torch.zeros((7, src.shape[1])).long()
+        max_len = 40
+        trg = torch.zeros((max_len, src.shape[1])).long()
         trg.fill_(self.sos_idx).to(src.device)
         return trg
 
