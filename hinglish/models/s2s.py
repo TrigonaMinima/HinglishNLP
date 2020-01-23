@@ -5,8 +5,8 @@ import torch.nn as nn
 import torch.nn.functional as F
 
 
-def norm_log_prob_obj(score, len):
-    return score / len**0.7
+def norm_log_prob_obj(score, length, alpha=0.75):
+    return score / length**alpha
 
 
 class Seq2Seq(nn.Module):
@@ -106,7 +106,8 @@ class Seq2SeqInfer(Seq2Seq):
         outs = []
         for i in range(beam):
             seqs[i][2] = torch.cat(seqs[i][2], 0)
-            outs.append((seqs[i][2], seqs[i][-1].item()))
+            score = norm_log_prob_obj(seqs[i][-1].item(), len(seqs[i][2]))
+            outs.append((seqs[i][2], score))
 
         return outs
 
